@@ -1,3 +1,131 @@
-.links{
-    list-style: none;
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font for the body */
+    background-color: #f4f4f4; /* Light background color for contrast */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Header styles */
+.header {
+    position: relative; /* Position relative for absolute positioning of child elements */
+    text-align: center; /* Center text in the header */
+    color: white; /* White text color for header */
+    padding: 20px; /* Padding around the header */
+    background-color: #333; /* Dark background for the header */
+}
+
+/* Title styles */
+.header h1 {
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 2.5em; /* Larger font size for the title */
+}
+
+/* Section styles */
+.header section {
+    position: relative; /* Position relative for the image */
+}
+
+/* Image styles */
+.header img {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space */
+}
+
+/* Main div styles */
+.main-div {
+    position: absolute; /* Position absolute to overlay on the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px; /* Padding around the links */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Navigation styles */
+.links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display items in a row */
+    justify-content: center; /* Center navigation items */
+}
+
+.links li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+.links a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Font size for navigation links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for navigation links */
+.links a:hover {
+    color: #ff6347; /* Change color on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px; /* Padding around the main content */
+    text-align: center; /* Center text in the main content */
+}
+
+/* Form styles */
+form {
+    background-color: white; /* White background for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px; /* Max width for the form */
+    margin: 20px auto; /* Center the form horizontally */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin: 10px 0 5px; /* Space around labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space below input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: #333; /* Dark background for the button */
+    color: white; /* White text color for the button */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6347; /* Change background color on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center text in the footer */
+    padding: 20px; /* Padding around the footer */
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color for
